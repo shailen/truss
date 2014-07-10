@@ -1,0 +1,20 @@
+{
+  "name": "supergen",
+  "version": "0.0.0",
+  "authors": [
+    "Shailen Tuli <shailentuli@google.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3",
+    "core-elements": "Polymer/core-elements#~0.3.3",
+    "paper-elements": "Polymer/paper-elements#~0.3.3"
+  }
+}
