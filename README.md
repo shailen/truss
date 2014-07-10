@@ -41,5 +41,5 @@ use `Truss` to generate the following Polymer apps:
 
 - with AppEngine and DataStore
 - with Rails and MongoDB
-- with Flash and MySQL
+- with Flask and MySQL
 
