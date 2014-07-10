@@ -4,29 +4,29 @@
 
 Consider a 'Blog' app with the following data models:
 
-[{Post: {
-    fields: [
-      {name: "title", type: "String", max_length: 30, required: true},
-      {name: "body", type: "String", max_length: 300, required: true},
-      {published: "DateTime"},
-      {comments: "OneToManyField(Comment)"},
-      {tags: "ManyToManyField(Tag)"}]
-    }
-  },
+    [{Post: {
+        fields: [
+          {name: "title", type: "String", max_length: 30, required: true},
+          {name: "body", type: "String", max_length: 300, required: true},
+          {published: "DateTime"},
+          {comments: "OneToManyField(Comment)"},
+          {tags: "ManyToManyField(Tag)"}]
+        }
+      },
 
-  {Comment: {
-    fields: [
-      {body: "String", max_length: 300, required: true},
-      {published: "DateTime"}]
-    }
-  },
+      {Comment: {
+        fields: [
+          {body: "String", max_length: 300, required: true},
+          {published: "DateTime"}]
+        }
+      },
 
-  {Tag: {
-    fields: [
-      {name: "String", max_length: 20, required: true, unique: true}]
-    }
-  }
-]
+      {Tag: {
+        fields: [
+          {name: "String", max_length: 20, required: true, unique: true}]
+        }
+      }
+    ]
 
 `Truss` scaffolds a Polymer app that performs CRUD operations on Post, Comment,
 and Tag.
